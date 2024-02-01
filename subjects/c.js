@@ -245,6 +245,7 @@ function showCustomOutput() {
 function recommendColleges(score) {
     // College suggestions based on the score range
     const suggestions = {
+        '<0': ["Insufficient Score, Study Hard!!!"],
         '0-5': ["Guru Gobind Singh Indraprastha University (GGSIPU) Affiliated Colleges", "Osmania University College of Engineering (OUCE), Hyderabad ", "Shivaji University Affiliated Colleges"],
         '6-10': ["Anna University Affiliated Colleges", "Rajasthan Technical University (RTU) Affiliated College", "Pondicherry University College of Engineering "],
         '11-15': ["Jaya Engineering College (JEC), Chennai", "Dr. K. N. Modi Engineering College, Modinagar", "Chaitanya Bharathi Institute of Technology (CBIT), Hyderabad"],
@@ -260,19 +261,23 @@ function recommendColleges(score) {
     let range = '';
     if (score >= 0 && score <= 5) {
         range = '0-5';
-    } else if (score > 6 && score <= 10) {
+    } else if (score >= 6 && score <= 10)          
+    {
         range = '6-10';
-    } else if (score > 11 && score <= 15) {
+    } else if (score < 0) 
+    {
+        range = '<0';
+    } else if (score >= 11 && score <= 15) {
         range = '11-15';
-    } else if (score > 16 && score <= 20) {
+    } else if (score >= 16 && score <= 20) {
         range = '16-20';
-    } else if (score > 21 && score <= 25) {
+    } else if (score >= 21 && score <= 25) {
         range = '21-25';
-    } else if (score > 26 && score <= 30) {
+    } else if (score >= 26 && score <= 30) {
         range = '26-30';
-    } else if (score > 31 && score <= 35) {
+    } else if (score >= 31 && score <= 35) {
         range = '31-35'; 
-    } else if (score > 36 && score <= 39) {
+    } else if (score >= 36 && score <= 39) {
         range = '36-39';   
     } else {
         range = '40';
