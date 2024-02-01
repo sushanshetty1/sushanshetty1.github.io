@@ -31,6 +31,8 @@ body {
     font-weight: bold;
     color: #333;
     white-space: pre-line; /* Preserve line breaks in the text */
+    float:right;
+    
 }
 
 .options-container {
