@@ -30,7 +30,6 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: #333;
-    white-space: pre-line; /* Preserve line breaks in the text */
     float:right;
     
 }
