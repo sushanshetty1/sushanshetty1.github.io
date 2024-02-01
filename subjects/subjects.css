@@ -49,7 +49,7 @@ body {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
 	font-size: 13px;
-	color: #2E3D49;
+	color: #ba23e8;
 	display: block;
 	text-decoration: none;
 	text-align: center;
@@ -76,13 +76,13 @@ body {
 
 .nav ul li a:hover
 {
-	color: #FA4B37;
+	color: #ba23e8;
 }
 
 .nav button
 {
 	padding: 9px 25px;
-	background: linear-gradient(to right, #FA4B37, #DF2771);
+	background: linear-gradient(to right, #ba23e8, #27a2df);
 	color: #fff;
 	border: none;
 	border-radius: 5px;
@@ -141,13 +141,13 @@ body {
 	font-weight: 700;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 60px;
-	color: #2E3D49;
+	color: #ba23e8;
 }
 .title .shortdesc {
 	padding: 10px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
-	color: #2E3D49;
+	color: #ba23e8;
 	margin-bottom: 50px;
 }
 
@@ -176,13 +176,13 @@ body {
 	border-radius: 50px;
 	border: 1px solid #FA4B37;
 	font-size: 15px;
-	color: #272529;
+	color: #ba23e8;
 	font-family: cursive;
 	text-decoration: none;
 }
 
 .cbox .det a:hover{
-	background: linear-gradient(to right, #FA4B37, #DF2771);
+	background: linear-gradient(to right, #ba23e8, #27a2df);
 	color: white;
 }
 
@@ -190,7 +190,7 @@ body {
 	padding: 10px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 30px;
-	color: #2E3D49;
+	color: #ba23e8;
 	margin: 100px;
 	margin-bottom: 50px;
 }
@@ -212,7 +212,7 @@ body {
 	margin: 10px;
 	width: 300px;
 	height: 200px;
-	background: linear-gradient(to right, #FA4B37, #DF2771);
+	background: linear-gradient(to right, #ba23e8, #27a2df);
 	border-radius: 10px;
 	box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
@@ -258,13 +258,13 @@ body {
 	font-weight: 700;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 30px;
-	color: #2E3D49;
+	color: #ba23e8;
 }
 .title2 .shortdesc2 {
 	padding: 10px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
-	color: #2E3D49;
+	color: #ba23e8;
 	margin-bottom: 10px;
 }
 
@@ -279,7 +279,7 @@ body {
 	margin: 20px;
 	width: 300px;
 	height: 160px;
-	background: linear-gradient(to right, #FA4B37, #DF2771);
+	background: linear-gradient(to right, #ba23e8, #27a2df);
 	border-radius: 10px;
 }
 .dcard2:hover .fpart2 img {
@@ -317,7 +317,7 @@ body {
 	display: flex;
 }
 .click-me a {
-	color: #DF2771;
+	color: #ba23e8;
 	text-decoration: none;
 	transition-duration: .5s;
 	padding: 10px;
@@ -360,7 +360,7 @@ body {
 	padding: 10px;
 }
 .project-card .info h4 {
-	color: #2E3D49;
+	color: #ba23e8;
 }
 .project-card .info p {
 	font-size: 12px;
@@ -372,13 +372,13 @@ body {
 }
 .download a{
 	padding: 5px 10px;
-	color: #DF2771;
+	color: #ba23e8;
 	font-size: .8em;
 	visibility: hidden;
 }
 .download:hover a{
 	transition: .5s ease;
-	background: #DF2771;
+	background: #ba23e8;
 	color: #fff;
 }
 
@@ -404,7 +404,7 @@ body {
 }
 
 .sample ul li a {
-	color: #FA4B37;
+	color: #ba23e8;
 	width: 300px;
 	font-size: 20px;
 }
@@ -412,7 +412,7 @@ body {
 /*Footer*/
 
 footer {
-	color: #E5E8EF;
+	color: #ba23e8;
 	background: #000D;
 	padding: 50px 0; 
 }
