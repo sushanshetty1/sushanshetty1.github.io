@@ -7,7 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden; /* Prevent scrolling when the quiz is active */
-  background-color: #f5f5f5;
+  
 }
 
 .chat-container::before{display:none;}
@@ -24,7 +24,8 @@ body {
     
 }
 
-.chat-container:hover {
+.chat-container:active {
+background-color: #f5f5f5;
     
 }
 
