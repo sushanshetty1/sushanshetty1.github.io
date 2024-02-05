@@ -93,3 +93,43 @@ align:center;
 #start-btn:hover {
     background-color: #2980b9;
 }
+/* Center and style the quiz container */
+#quiz-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center horizontally and vertically */
+  width: 80%; /* Adjust width as needed */
+  max-width: 600px; /* Set a maximum width for responsiveness */
+  background-color: #fff; /* White background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  padding: 20px; /* Add some padding for content spacing */
+}
+
+/* Optional styling for question and options containers */
+#question-container {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#options-container {
+  margin-bottom: 20px;
+}
+
+/* Optional styling for buttons and result */
+.next-btn, .skip-btn {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px; /* Adjust spacing as needed */
+}
+
+#result {
+  font-size: 16px;
+  margin-top: 10px;
+}
