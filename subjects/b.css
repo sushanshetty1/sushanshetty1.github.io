@@ -77,7 +77,7 @@ align:center;
     margin: 20px 0;
 }
 
-#start-btn {
+/* #start-btn {
     display: block;
     margin: auto;
     padding: 12px 24px;
@@ -87,7 +87,7 @@ align:center;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; */
 }
 
 #start-btn:hover {
