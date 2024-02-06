@@ -4,16 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="b.css">
-  <title>Your Quiz Title</title>
+  <title>Quiz</title>
 </head>
 
 <body style="background-img:url('https://github.com/sushanshetty1/sushanshetty1.github.io/blob/main/subjects/images/extra/quiz.jpg')">
   <div class="quiz-wrapper">
     <div id="quiz-container">
-      ...
+       <div id="question-container" class="chat-bubble"></div>
+    <div id="options-container" class="options-container"></div></center>
+   <center>  <button id="next-btn" class="next-btn" onclick="submitQuiz()">Next</button>
+    <p id="result" class="result"></p>
+  <center>  <button id="skip-btn" class="skip-btn" onclick="skipQuestion()">Skip Question</button></center>
+ </body> </div>
     </div>
     <button id="start-btn" onclick="startQuiz()">Start Quiz</button>
   </div>
   <script src="c.js"></script>
 </body>
 </html>
+
