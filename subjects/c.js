@@ -222,6 +222,11 @@ function submitQuiz() {
         nextQuestion();
     }
 }
+function startQuiz() {
+  const quizContainer = document.getElementById('quiz-container');
+  quizContainer.classList.remove('hidden'); // Remove the hidden class after click
+}
+
 
 function skipQuestion() {
     currentQuestion++;
@@ -266,7 +271,8 @@ function recommendColleges(score) {
         range = '6-10';
     } else if (score < 0) 
     {
-        range = '<0';
+        range = '<0';
+
     } else if (score >= 11 && score <= 15) {
         range = '11-15';
     } else if (score >= 16 && score <= 20) {
