@@ -151,6 +151,9 @@ const questions = [
     },
 ];
 
+
+// Your questions array goes here
+
 let score = 0;
 let currentQuestion = 0;
 let shuffledQuestions = [];
@@ -198,7 +201,9 @@ function nextQuestion() {
         nextBtn.style.display = "none";
         skipBtn.style.display = "none";
         resultContainer.innerHTML = `<p>Your Final Score: ${score}</p>`;
-        showCustomOutput();
+        showCustomOutput(); // Show custom output when the quiz ends
+
+        // Recommend colleges based on the score
         recommendColleges(score);
     }
 }
@@ -208,9 +213,10 @@ function submitQuiz() {
 
     if (selectedOption) {
         if (selectedOption.value === shuffledQuestions[currentQuestion].correctAnswer) {
-            score += 4;
+            score += 4; // Correct answer, add 4 points
         } else {
-            score -= 1;
+            score -= 1; // Incorrect answer, deduct 1 point
+        }
 
         currentQuestion++;
         nextQuestion();
@@ -223,18 +229,21 @@ function skipQuestion() {
 }
 
 function showCustomOutput() {
+    // Show your custom output at regular intervals
     let intervalCounter = 1;
     const resultInterval = setInterval(function () {
         if (intervalCounter <= 3) {
             console.log(`Custom output for interval ${intervalCounter}`);
+            // You can display the output on the webpage or perform any other action
         } else {
-            clearInterval(resultInterval);
+            clearInterval(resultInterval); // Stop the interval after three iterations
         }
         intervalCounter++;
-    }, 5000);
+    }, 5000); // 5000 milliseconds = 5 seconds
 }
 
 function recommendColleges(score) {
+    // College suggestions based on the score range
     const suggestions = {
         '<0': ["Insufficient Score, Study Hard!!!"],
         '0-5': ["Guru Gobind Singh Indraprastha University (GGSIPU) Affiliated Colleges", "Osmania University College of Engineering (OUCE), Hyderabad ", "Shivaji University Affiliated Colleges"],
@@ -248,6 +257,7 @@ function recommendColleges(score) {
         '40': ["Scoring full marks is a remarkable feat that reflects not only your intelligence but also your unwavering commitment to excellence.You can certainly try for IIT's."]
     };
 
+    // Determine the score range
     let range = '';
     if (score >= 0 && score <= 5) {
         range = '0-5';
@@ -273,6 +283,8 @@ function recommendColleges(score) {
     } else {
         range = '40';
     }
+
+    // Display only one college recommendation on the webpage
     const suggestedColleges = suggestions[range];
     const randomIndex = Math.floor(Math.random() * suggestedColleges.length);
     const selectedCollege = suggestedColleges[randomIndex];
