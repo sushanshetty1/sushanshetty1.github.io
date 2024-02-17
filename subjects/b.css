@@ -1,35 +1,28 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+    background-color: #f0f0f0;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden; /* Prevent scrolling when the quiz is active */
-   
-  
+    overflow: hidden;
 }
-.quiz-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-}
-.chat-container::before{display:none;}
-.chat-container::after {
-    width: 300px;
-  
+
+.chat-container {
+    width: 33vw;
+    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
+    overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: auto;
     padding: 20px;
-    
+    text-align: left;
 }
 
-
-    
+.chat-container:hover {
+    background-color: #f5f5f5;
 }
 
 .question-container p {
@@ -37,7 +30,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: #333;
-  
+    white-space: pre-line;
 }
 
 .options-container {
@@ -66,8 +59,6 @@ input[type="radio"] {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-align:center;
-
 }
 
 .next-btn:hover,
@@ -82,7 +73,7 @@ align:center;
     margin: 20px 0;
 }
 
-/*#start-btn {
+#start-btn {
     display: block;
     margin: auto;
     padding: 12px 24px;
@@ -92,45 +83,9 @@ align:center;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease; */
+    transition: background-color 0.3s ease;
 }
 
 #start-btn:hover {
     background-color: #2980b9;
-}
-/* Center and style the quiz container */
-#quiz-container {
-  width: 80%; /* Adjust width as needed */
-  max-width: 600px; /* Set a maximum width for responsiveness */
-  background-color: #fff; /* White background for contrast */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-  padding: 20px; /* Add some padding for content spacing */
-}
-
-/* Optional styling for question and options containers */
-#question-container {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-#options-container {
-  margin-bottom: 20px;
-}
-
-/* Optional styling for buttons and result */
-.next-btn, .skip-btn {
-  background-color: #4CAF50; /* Green */
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-right: 10px; /* Adjust spacing as needed */
-}
-
-#result {
-  font-size: 16px;
-  margin-top: 10px;
 }
