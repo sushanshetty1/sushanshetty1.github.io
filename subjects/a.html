@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="b.css">
-    <title>Your Quiz Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="b.css">
+  <title>Your Quiz Title</title>
 </head>
-
-<body style="background-img:url("./images/extra/quiz.png")>
+<body>
+  <div id="quiz-box" style="display: none">
     <div class="chat-container" id="quiz-container">
-        <div id="question-container" class="chat-bubble"></div>
-       <div id="options-container" class="options-container"></div></center>
-     <center>   <button id="next-btn" class="next-btn" onclick="submitQuiz()">Next</button>
+      <div id="question-container" class="chat-bubble"></div>
+      <div id="options-container" class="options-container"></div>
+      <center>
+        <button id="next-btn" class="next-btn" onclick="submitQuiz()">Next</button>
         <p id="result" class="result"></p>
-    <center>    <button id="skip-btn" class="skip-btn" onclick="skipQuestion()">Skip Question</button></center>
-  </body>  </div>
- <center>   <button id="start-btn" onclick="startQuiz()">Start Quiz</button>
-    <script src="c.js"></script>
-</div>
+      </center>
+      <center>
+        <button id="skip-btn" class="skip-btn" onclick="skipQuestion()">Skip Question</button>
+      </center>
+    </div>
+  </div>
+  <center>
+    <button id="start-btn" onclick="startQuiz()">Start Quiz</button>
+  </center>
+  <script src="c.js"></script>
+</body>
 </html>
