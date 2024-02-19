@@ -1,97 +1,104 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden; /* Prevent scrolling when the quiz is active */
-   
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.chat-container::before{display:none;}
+.chat-container::before {
+  display: none;
+}
+
 .chat-container::after {
-    width: 300px;
-  
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: auto;
-    padding: 20px;
-    
-}
-
-
-    
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 50px 50px 0 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  padding: 20px;
 }
 
 .question-container p {
-    margin: 0;
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-  
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
 }
 
 .options-container {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 label {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 16px;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
 }
 
 input[type="radio"] {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .next-btn,
 .skip-btn {
-    display: none;
-    margin-top: 20px;
-    padding: 12px 24px;
-    font-size: 18px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-align:center;
-
+  display: none;
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align: center;
 }
 
 .next-btn:hover,
 .skip-btn:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 .result {
-    text-align: center;
-    font-size: 18px;
-    color: #333;
-    margin: 20px 0;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  margin: 20px 0;
 }
 
 #start-btn {
-    display: block;
-    margin: auto;
-    padding: 12px 24px;
-    font-size: 18px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  display: block;
+  margin: auto;
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 #start-btn:hover {
-    background-color: #2980b9;
+  background-color: #2980b9;
+}
+
+#quiz-box {
+  text-align: center; /* Center elements horizontally */
+}
+
+.fade-in {
+  animation: fade-in 0.5s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 }
 .chat-container {
   /* Existing styles... */
