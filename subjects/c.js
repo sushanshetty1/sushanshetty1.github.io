@@ -157,12 +157,34 @@ const questions = [
 let score = 0;
 let currentQuestion = 0;
 let shuffledQuestions = [];
+try {
+} catch (error) {
+  console.error("Error encountered:", error);
+  alert("An error occurred. Please try again later.");
+}
 
+function provideFeedback(correctAnswer) {
+  const selectedOption = document.querySelector('input[name="question"]:checked');
+  const feedbackEl = document.getElementById("feedback");
+
+  if (selectedOption) {
+    if (selectedOption.value === correctAnswer) {
+      feedbackEl.innerHTML = "Correct!";
+      feedbackEl.classList.remove("incorrect");
+    } else {
+      feedbackEl.innerHTML = `Incorrect. The correct answer is "${correctAnswer}".`;
+      feedbackEl.classList.add("incorrect");
+    }
+  } else {
+    feedbackEl.innerHTML = "Please select an answer.";
+  }
+}
 function startQuiz() {
     document.getElementById("start-btn").style.display = "none";
     shuffledQuestions = shuffleArray(questions).slice(0, 10);
     document.body.style.backgroundImage = "url('images/icon/qqq.jpg')";
     document.body.classList.add("fade-in");
+    provideFeedback(shuffledQuestions[currentQuestion].correctAnswer);
     nextQuestion();
 }
 
