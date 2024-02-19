@@ -6,6 +6,11 @@ body {
   align-items: center;
   height: 100vh;
   overflow: hidden;
+  background-image: url("images/icons/qqq.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 }
 
 .chat-container::before {
