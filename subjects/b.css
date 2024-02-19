@@ -93,3 +93,31 @@ align:center;
 #start-btn:hover {
     background-color: #2980b9;
 }
+.chat-container {
+  /* Existing styles... */
+  border-radius: 50px 50px 0 0; /* Top-left and top-right corners curved */
+  overflow: hidden; /* Prevent content from overflowing the curved corners */
+  position: relative; /* For adding the shadow effect */
+}
+
+.chat-container::after {
+  /* Existing styles... */
+  border-radius: inherit; /* Inherit curved corners from .chat-container */
+  position: absolute;
+  top: 10px; /* Adjust for desired shadow placement */
+  left: 10px; /* Adjust for desired shadow placement */
+  right: 10px; /* Adjust for desired shadow width */
+  bottom: 10px; /* Adjust for desired shadow height */
+  content: ""; /* Create an empty pseudo-element */
+  z-index: -1; /* Place the shadow behind the box content */
+  background-color: rgba(0, 0, 0, 0.2); /* Adjust shadow color and opacity */
+  mask: blur(20px); /* Create the curved shadow effect */
+}
+.question-container,
+.options-container,
+.result,
+#start-btn,
+#next-btn,
+#skip-btn {
+  padding: 20px; /* Adjust internal padding if needed */
+}
