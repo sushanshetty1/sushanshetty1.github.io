@@ -259,7 +259,10 @@ function recommendColleges(score) {
 
     // Determine the score range
     let range = '';
-    if (score >= 0 && score <= 5) {
+    if (score < 0) {
+        range = '<0';
+    } 
+    else if (score >= 0 && score <= 5) {
         range = '0-5';
     } else if (score >= 6 && score <= 10)          
     {
