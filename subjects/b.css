@@ -133,3 +133,15 @@ input[type="radio"] {
 #skip-btn {
   padding: 20px; /* Adjust internal padding if needed */
 }
+/* Relevant CSS styles from previous versions */
+
+/* Additional styles */
+.feedback {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #4CAF50; /* Default green for correct, adjust for wrong */
+}
+
+.feedback.incorrect {
+  color: #ff0000; /* Red for incorrect */
+}
