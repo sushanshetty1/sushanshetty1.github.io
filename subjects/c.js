@@ -161,6 +161,8 @@ let shuffledQuestions = [];
 function startQuiz() {
     document.getElementById("start-btn").style.display = "none";
     shuffledQuestions = shuffleArray(questions).slice(0, 10);
+    document.body.style.backgroundImage = "url('path/to/your/background_image.jpg')";
+    document.body.classList.add("fade-in");
     nextQuestion();
 }
 
