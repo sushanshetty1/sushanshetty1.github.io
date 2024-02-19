@@ -182,9 +182,9 @@ function provideFeedback(correctAnswer) {
 function startQuiz() {
     document.getElementById("start-btn").style.display = "none";
     shuffledQuestions = shuffleArray(questions).slice(0, 10);
-    document.body.style.backgroundImage = "url('images/icon/qqq.jpg')";
+    /*document.body.style.backgroundImage = "url('images/icon/qqq.jpg')";
     document.body.classList.add("fade-in");
-    provideFeedback(shuffledQuestions[currentQuestion].correctAnswer);
+    provideFeedback(shuffledQuestions[currentQuestion].correctAnswer);*/
     nextQuestion();
 }
 
