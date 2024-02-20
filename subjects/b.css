@@ -6,82 +6,91 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
-}
-
-.chat-container::before{display:none;}
-.chat-container::after {
-    width: 300px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url("qqq.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .chat-container {
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 500px;
     margin: auto;
-    padding: 20px;
-}
-}
-
-.question-container p {
+    background: linear-gradient(to right, #d79ee8, #91ceec);
+  }
+  
+  .chat-container::before {
+    display: none;
+  }
+  
+  .chat-container::after {
+    display: none;
+  }
+  
+  .question-container p {
     margin: 0;
     font-size: 18px;
     font-weight: bold;
-    color: #333;
+    color: #000000;
+  }
   
-}
-
-.options-container {
+  .options-container {
     margin-top: 20px;
-}
-
-label {
+  }
+  
+  label {
     display: block;
     margin-bottom: 8px;
     font-size: 16px;
-}
-
-input[type="radio"] {
+  }
+  
+  input[type="radio"] {
     margin-right: 8px;
-}
-
-.next-btn,
-.skip-btn {
+  }
+  
+  .next-btn,
+  .skip-btn {
     display: none;
     margin-top: 20px;
     padding: 12px 24px;
     font-size: 18px;
-    background-color: #4CAF50;
+    background: linear-gradient(to right, #ba23e8, #27a2df);
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-align:center;
-
-}
-
-.next-btn:hover,
-.skip-btn:hover {
-    background-color: #45a049;
-}
-
-.result {
+    align-content: center;
+  }
+  
+  .next-btn:hover,
+  .skip-btn:hover {
+    background: linear-gradient(to right, #ba23e8, #27a2df);
+  }
+  
+  .result {
     text-align: center;
     font-size: 18px;
     color: #333;
     margin: 20px 0;
-}
-
-#start-btn {
+    font-weight: bold;
+  }
+  
+  #start-btn {
     display: block;
     margin: auto;
     padding: 12px 24px;
     font-size: 18px;
-    background-color: #3498db;
+    background: linear-gradient(to right, #ba23e8, #27a2df);
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-#start-btn:hover {
-    background-color: #2980b9;
-}
+  }
+  
+  #start-btn:hover {
+    background: linear-gradient(to right, #ba23e8, #27a2df);
+  }
+  
