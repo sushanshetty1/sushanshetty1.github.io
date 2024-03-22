@@ -418,6 +418,7 @@ footer {
 }
 
 footer .footer-container {
+	color: white;
 	max-width: 1300px;
 	margin: auto;
 	padding: 0 20px;
@@ -510,6 +511,7 @@ footer .btn:hover {
 		margin-bottom: 60px;
 	}
 	.left-col {
+		color: white;
 		width: 100%;
 		text-align: center;
 	}
